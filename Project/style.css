@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 95%);
+    padding: 10%;
+}
+
+.main-conteiner{
+    display: flex;
+}
+
+.sedans{
+    background: hsl(31, 77%, 52%);
+    padding: 5rem 5rem;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.suvs{
+    background: hsl(184, 100%, 22%);
+    padding: 5rem 5rem;
+}
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+    padding: 5rem 5rem;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.button-luxury{
+    background: hsl(0, 0%, 95%);
+    border: none;
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.button-suvs{
+    background: hsl(0, 0%, 95%);
+    border: none;
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.button-sedans{
+    background: hsl(0, 0%, 95%);
+    border: none;
+    color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.title-suvs, .title-luxury, .title-sedans{
+    color: hsl(0, 0%, 95%);
+}
+
+.pair-sedans, .pair-luxury, .pair-suvs{
+    color: hsla(0, 0%, 100%, 0.70);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.div-image-luxury, .div-image-sedans, .div-image-suvs{
+    margin-bottom: 1.5rem;
+}
+
+.div-pair-luxury, .div-pair-sedans, .div-pair-suvs{
+    margin-bottom: 4rem;
+}
+
+.div-h1-sedans, .div-h1-luxury, .div-h1-suvs{
+    margin-bottom:1.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 17px;
+}
+
+.button-luxury:hover{
+    cursor: pointer;
+    color: #FFF;
+    background: none;
+    border: solid 1px #FFF;
+    transition: .3s;
+    transform: translateY(-3px);
+    position: fixed
+}
+
+.button-suvs:hover{
+    cursor: pointer;
+    color: #FFF;
+    background: none;
+    border: solid 1px #FFF;
+    transition: .3s;
+    transform: translateY(-3px);
+    position: fixed
+}
+
+.button-sedans:hover{
+    cursor: pointer;
+    color: #FFF;
+    background: none;
+    border: solid 1px #FFF;
+    transition: .3s;
+    transform: translateY(-3px);
+    position: fixed
+}
+
+@media only screen and (max-width:1024px){
+    .main-conteiner{
+        flex-direction: column;
+    }
+
+    .suvs, .sedans ,.luxury{
+        padding: 2rem;
+    }
+
+    .div-pair-luxury, .div-pair-sedans, .div-pair-suvs{
+        margin-bottom: 2rem;
+    }
+
+    .button-sedans, .button-luxury, .button-suvs{
+        padding: .8rem 1.5rem;
+    }
+
+    .sedans{
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .luxury{
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+}
